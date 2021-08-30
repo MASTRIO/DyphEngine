@@ -1,0 +1,9 @@
+[package]
+name = "dyphengine"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+console = {path = "../console"}
+parser = {path = "../parser"}
+structopt = "0.3.13"
