@@ -1,3 +1,6 @@
-map create something
-echo test
-echo another_test
+map create testGame
+script create amogus
+script add amogus
+    print hello
+    print world
+stop
