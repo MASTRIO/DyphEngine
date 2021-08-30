@@ -22,6 +22,9 @@ fn main() {
     let script_file = std::fs::read_to_string(&args.script_path)
         .expect("Could not read file");
     
-    //console::print::log(script_file.as_str());
-    lexer::lex_stuff(script_file.as_str());
+    if script_file.split(".").last().unwrap() != "dyph" {
+        lexer::lex_stuff(script_file.as_str());
+    } else {
+        console::print::error("ERR_INCORRECT_FILE_TYPE");
+    }
 }

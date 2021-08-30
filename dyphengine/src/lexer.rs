@@ -12,6 +12,5 @@ pub fn lex_stuff(script: &str) {
     for lines in script_lines {
         let line_components: Vec<&str> = lines.split(" ").collect();
         parser::parse(line_components);
-        let line_components: Vec<&str> = lines.split("").collect();
     }
 }

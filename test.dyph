@@ -1,1 +1,3 @@
-echo amogus
+map create something
+echo test
+echo another_test
