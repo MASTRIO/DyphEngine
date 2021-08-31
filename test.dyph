@@ -1,6 +1,7 @@
+# Creates the map
 map create testGame
+# Creates amogus script file
 script create amogus
-script add amogus
-    print hello
-    print world
-stop
+    say hello
+    say world
+---

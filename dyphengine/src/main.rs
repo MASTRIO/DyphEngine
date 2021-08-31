@@ -1,5 +1,6 @@
 use structopt::StructOpt;
 use console;
+use file_manager;
 mod lexer;
 
 // CLI structure
@@ -23,6 +24,8 @@ fn main() {
         .expect("Could not read file");
     
     if script_file.split(".").last().unwrap() != "dyph" {
+        file_manager::delete_temp_folder();
+        file_manager::create_temp_folder();
         lexer::lex_stuff(script_file.as_str());
     } else {
         console::print::error("ERR_INCORRECT_FILE_TYPE");

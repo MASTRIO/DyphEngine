@@ -15,6 +15,12 @@ pub fn parse(components: Vec<&str>) {
                 _ => console::print::error("ERR_UNKNOWN_COMMAND")
             }
         }
+        "script" => {
+            match components[1] {
+                "create" => commands::script::create(components[2]),
+                _  => console::print::error("ERR_UNKNOWN_COMMAND")
+            }
+        }
         "echo" => commands::echo(components[1]),
         _ => console::print::error("ERR_UNKNOWN_COMMAND")
     }

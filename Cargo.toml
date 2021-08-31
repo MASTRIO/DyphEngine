@@ -2,5 +2,6 @@
 members = [
     "dyphengine",
     "console",
-    "parser"
+    "parser",
+    "file_manager"
 ]
