@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "dyphengine",
+    "console",
+    "parser",
+    "file_manager"
+]
